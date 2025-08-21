@@ -1,0 +1,13 @@
+{
+  "name": "js-basics-assignment",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "check": "node __tests__/functions.test.js",
+    "test": "node __tests__/functions.test.js && node __tests__/io.test.js",
+    "start": "node src/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
