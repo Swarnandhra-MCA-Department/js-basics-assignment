@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "tests": [
+    {
+      "name": "Variables & functions unit tests",
+      "setup": "npm ci",
+      "run": "node __tests__/functions.test.js",
+      "timeout": 10,
+      "points": 40,
+      "comparison": "exact",
+      "output": "OK"
+    },
+    {
+      "name": "CLI I/O prints correct output #1",
+      "setup": "",
+      "run": "node src/index.js",
+      "input": "name=Rama\nage=21\n",
+      "timeout": 10,
+      "points": 30,
+      "comparison": "exact",
+      "output": "Hello, Rama. You are 21."
+    },
+    {
+      "name": "CLI I/O prints correct output #2",
+      "setup": "",
+      "run": "node src/index.js",
+      "input": "name=Alice\nage=33\n",
+      "timeout": 10,
+      "points": 30,
+      "comparison": "exact",
+      "output": "Hello, Alice. You are 33."
+    }
+  ]
+}
